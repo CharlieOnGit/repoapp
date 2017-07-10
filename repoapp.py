@@ -288,8 +288,10 @@ def aliquot_summary(ids, identifier):
 # this needs work!!! Goal is to store teh query in a pandas df
 def sql_gu(query):
 
-    dsnStr = cx_Oracle.makedsn("SDWHODBQA01", "1521", "MSDWUSERS") 
-    con = cx_Oracle.connect(user='ERAP_DM', password='erap17!@#', dsn=dsnStr)
+    dsnStr = cx_Oracle.makedsn("SDWHODBQA01", "1521", "MSDWUSERS")
+    user = raw_input('username: ')
+    password = raw_input('password: ') 
+    con = cx_Oracle.connect(user=user, password=password, dsn=dsnStr)
     cur = con.cursor()
     cur.execute(query)
     cols = []
