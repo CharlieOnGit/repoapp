@@ -13,7 +13,7 @@ import cx_Oracle
 # mergecasting (merhing disparate records into 1 dataframe and ensuring logical datatypes)
 
 # path to phi
-phi_path = r'J:\CancerInst\PatientInfo\3. Oh William\BiorepositoryPHI'
+phi_path = r'J:\CancerInst\PatientInfo\BiorepositoryPHI'
 
 def update_idkey():
 	print('running...')
