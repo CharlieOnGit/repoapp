@@ -13,7 +13,7 @@ import cx_Oracle
 # mergecasting (merhing disparate records into 1 dataframe and ensuring logical datatypes)
 
 # path to phi
-phi_path = r'J:\CancerInst\PatientInfo\BiorepositoryPHI'
+phi_path = r'J:\CancerInst\PatientInfo\3. Oh William\BiorepositoryPHI'
 
 def update_idkey():
 	print('running...')
@@ -211,7 +211,6 @@ def update_erap_aliquot():
 	mapping = dict(pairs)
 	blood_draws.loc[:, 'VolumeDrawn'] = blood_draws.loc[:, 'ProcType'].map(arg=mapping)
 	blood_draws = blood_draws.loc[:, ['PID', 'VID', 'SpID', 'CollectionDate', 'ProcType', 'VolumeDrawn']]
-	print('trymod')
 	blood_draws.CollectionDate = pd.to_datetime(blood_draws.CollectionDate)
 	blood_draws.to_pickle(phi_path + r'\blood_draws.pickle')
 	print('Blood draws info has been updated.')
