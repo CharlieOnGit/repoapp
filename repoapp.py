@@ -11,6 +11,8 @@ import cx_Oracle
 #In order for the functions below to do their jobs properly, id_key_* must be put into the repoapp folder. 
 
 #mergecasting 
+
+#path to phi
 phi_path = r'J:\CancerInst\PatientInfo\BiorepositoryPHI'
 
 
