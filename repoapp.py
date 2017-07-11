@@ -8,13 +8,12 @@ style.use('ggplot')
 from pptx import Presentation
 import cx_Oracle
 
-#In order for the functions below to do their jobs properly, id_key_* must be put into the repoapp folder. 
+# In order for the functions below to do their jobs properly, id_key_* must be put into the repoapp folder. 
 
-#mergecasting 
+# mergecasting (merhing disparate records into 1 dataframe and ensuring logical datatypes)
 
-#path to phi
+# path to phi
 phi_path = r'J:\CancerInst\PatientInfo\BiorepositoryPHI'
-
 
 def update_idkey():
 	print('running...')
