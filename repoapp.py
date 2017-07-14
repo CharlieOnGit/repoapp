@@ -1,6 +1,3 @@
-# bloodreport
-
-
 # import libraries required for code below to run
 import numpy as np
 import pandas as pd
